@@ -24,7 +24,7 @@ if dein#load_state(s:dein_dir)
   "--------- essential plugins ----------
   call dein#load_toml(s:dein_toml_dir . "/basic.toml")
   if has("python3")
-    call dein#load_toml(s:dein_toml_dir . "/depends_python3.toml")
+    call dein#load_toml(s:dein_toml_dir . "/basic_python3.toml")
   endif
 
   "--------- additional plugins ----------
