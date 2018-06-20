@@ -1,5 +1,6 @@
 #!/bin/bash
-vim_version=$(./util/vim_version.sh)
+script_dir=$(dirname $0)
+vim_version=$($script_dir/util/vim_version.sh)
 vim_major_version=$(echo $vim_version | grep -oP '\d*?(?=\.)')
 
 if [ "$vim_major_version" != "8" ]; then
@@ -11,6 +12,7 @@ If you are using apt, run the following commands:
   sudo apt update
   sudo apt install vim
 EOF
+  exit 1
 fi
 
 user_vimrc=$(vim --version | grep -oP '(?<=  user vimrc file: ").*(?=")' | envsubst)
@@ -18,6 +20,6 @@ user_vimrc=$(vim --version | grep -oP '(?<=  user vimrc file: ").*(?=")' | envsu
 echo "copying files..."
 echo
 
-cp -vT ../.vimrc $user_vimrc
+cp -vT $script_dir/../.vimrc $user_vimrc
 mkdir -p ~/.dein.vim
-cp -vR ../dein.vim/* ~/.dein.vim/
+cp -vR $script_dir/../dein.vim/* ~/.dein.vim/
