@@ -9,6 +9,9 @@ repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+hook_source = """
+  let g:NERDTreeShowHidden=1
+"""
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
@@ -23,7 +26,9 @@ on-ft = 'toml'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
-hook_add = 'let g:deoplete#enable_at_startup = 1'
+hook_source = """
+  let g:deoplete#enable_at_startup = 1
+"""
 
 [[plugins]]
 repo = 'kana/vim-smartinput'
@@ -42,5 +47,7 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'sheerun/vim-polyglot'
-hook_add = "let g:polyglot_disabled = ['toml']"
+hook_source = """
+  let g:polyglot_disabled = ['toml']
+"""
 
