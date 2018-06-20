@@ -35,7 +35,7 @@ repo = 'simeji/winresizer'
 repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
-repo =  'w0ng/vim-hybrid'
+repo = 'ajmwagar/vim-deus'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
