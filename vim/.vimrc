@@ -29,8 +29,10 @@ if dein#load_state(s:dein_dir)
 
   "--------- additional plugins ----------
   call dein#load_toml(s:dein_toml_dir . "/lang/cpp.toml")
-  call dein#load_toml(s:dein_toml_dir . "/lang/python.toml")
+  call dein#load_toml(s:dein_toml_dir . "/lang/elm.toml")
+  call dein#load_toml(s:dein_toml_dir . "/lang/haskell.toml")
   call dein#load_toml(s:dein_toml_dir . "/lang/perl.toml")
+  call dein#load_toml(s:dein_toml_dir . "/lang/python.toml")
 
   call dein#end()
   call dein#save_state()
