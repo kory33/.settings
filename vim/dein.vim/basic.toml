@@ -40,3 +40,7 @@ repo = 'ajmwagar/vim-deus'
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+hook_add = "let g:polyglot_disabled = ['toml']"
+
