@@ -3,6 +3,15 @@
 script_dir=$(dirname $0)
 
 # install apt packages
+if ! (command -v sudo) ; then
+    apt install -y sudo
+
+    if [ $? -nq 0 ] ; then
+        echo "cannot install packages. Install sudo command and try again."
+        exit 1
+    fi
+fi
+
 ## for latest vim
 sudo add-apt-repository ppa:jonathonf/vim
 
