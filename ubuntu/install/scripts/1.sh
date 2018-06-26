@@ -3,18 +3,16 @@
 script_dir=$(dirname $0)
 
 # install apt packages
+## for latest vim
+sudo add-apt-repository ppa:jonathonf/vim
+
 sudo apt update
-sudo apt install python3-pip npm git
+sudo apt install -y git curl gettext vim python3-pip npm
 
 # configure git
 git config --global user.email "6561358+kory33@users.noreply.github.com"
 git config --global user.name "kory33"
 git config --global push.default simple
-
-# install latest vim
-sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update
-sudo apt install vim
 
 # install vim plugin dependencies
 pip3 install neovim
