@@ -27,7 +27,7 @@ git config --global push.default simple
 pip3 install neovim
 
 # copy vim settings
-./$script_dir/../../../vim/install/vim8.sh
+./$script_dir/../vim/install/vim8.sh
 
 # install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
