@@ -1,5 +1,8 @@
 "--------- Begin configuration ---------
+set encoding=utf-8
 scriptencoding utf-8
+
+set pyxversion=3
 
 "--------- Begin dein settings ---------
 augroup MyAutoCmd

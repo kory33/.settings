@@ -1,3 +1,6 @@
 [[plugins]]
 repo = 'ElmCast/elm-vim'
 
+[[plugins]]
+repo = 'pbogut/deoplete-elm'
+
