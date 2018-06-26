@@ -31,6 +31,12 @@ pip3 install neovim
 
 # install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# install node and common tools
+nvm install lts/carbon
+npm install -g yarn elm elm-test elm-oracle elm-format
 
 # configure ssh keys
 cat << EOF >> ~/.profile
