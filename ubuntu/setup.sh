@@ -16,7 +16,7 @@ sudo apt update
 sudo apt install -y software-properties-common
 
 ## for latest vim
-sudo add-apt-repository ppa:jonathonf/vim
+sudo add-apt-repository -y ppa:jonathonf/vim
 
 sudo apt update
 sudo apt install -y git curl gettext vim python3-pip npm
