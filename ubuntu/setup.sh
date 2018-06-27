@@ -36,7 +36,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # install node and common tools
 nvm install lts/carbon
-npm install -g yarn elm elm-test elm-oracle elm-format
+sudo npm install -g yarn elm elm-test elm-oracle elm-format
 
 # configure ssh keys
 cat << EOF >> ~/.profile
