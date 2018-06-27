@@ -4,16 +4,16 @@ script_dir=$(dirname $0)
 
 # install apt packages
 if ! (command -v sudo) ; then
-    apt install -y sudo
+    apt update && apt install -y sudo
 
     if [ $? -nq 0 ] ; then
-        echo "cannot install packages. Install sudo command and try again."
+        echo "Cannot install packages. Install sudo command first or run this script as root."
         exit 1
     fi
 fi
 
 sudo apt update
-sudo apt install -y software-properties-common python-software-properties
+sudo apt install -y software-properties-common
 
 ## for latest vim
 sudo add-apt-repository ppa:jonathonf/vim
