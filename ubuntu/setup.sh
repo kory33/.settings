@@ -12,6 +12,9 @@ if ! (command -v sudo) ; then
     fi
 fi
 
+sudo apt update
+sudo apt install -y software-properties-common python-software-properties
+
 ## for latest vim
 sudo add-apt-repository ppa:jonathonf/vim
 
